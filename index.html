@@ -9,14 +9,14 @@
 async function getData() {
   const response = await fetch("https://script.google.com/macros/s/AKfycbyIc0_nBJ4vbwotSX9KdhFbRNDPokY6ABcqnzdbvqW_oKBDsYdxDQbKvPSpqsjjFWo/exec?a=123",
   {
-    method: "GET",
-    /*body: JSON.stringify({
+    method: "POST",
+    body: JSON.stringify({
       "b": "1111111111",
     }),
     headers: {
       "Content-Type": "application/json",
     },
-    mode: "no-cors",*/
+    mode: "no-cors",
     cache: "no-cache",
     redirect: "follow", 
   });
