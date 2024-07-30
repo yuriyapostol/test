@@ -14,10 +14,11 @@ async function getData() {
       "b": "1111111111",
     }),
     headers: {
-      "Content-Type": "text/plain charset=utf-8",
+      "Content-Type": "application/json",
     },
     mode: "no-cors",
     cache: "no-cache",
+    credentials: "omit",
     redirect: "follow", 
   });
   if (!response.ok) {
