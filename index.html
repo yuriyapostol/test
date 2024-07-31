@@ -8,7 +8,7 @@
 <script>
 
 async function getData() {
-  const response = await fetch("https://script.google.com/macros/s/AKfycbyIc0_nBJ4vbwotSX9KdhFbRNDPokY6ABcqnzdbvqW_oKBDsYdxDQbKvPSpqsjjFWo/exec/api?a=123",
+  const response = await fetch("https://script.google.com/macros/s/AKfycbyIc0_nBJ4vbwotSX9KdhFbRNDPokY6ABcqnzdbvqW_oKBDsYdxDQbKvPSpqsjjFWo/exec?a=123",
   {
     method: "GET",
     /*body: JSON.stringify({
@@ -16,10 +16,9 @@ async function getData() {
     }),
     headers: {
       "Content-Type": "application/json",
-    },
-    mode: "no-cors",*/
+    },*/
+    mode: "no-cors",
     cache: "no-cache",
-    //credentials: "omit",
     redirect: "follow", 
   });
   if (!response.ok) {
