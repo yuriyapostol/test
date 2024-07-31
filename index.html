@@ -9,14 +9,14 @@
 
 async function getData() {
   fetch("https://script.google.com/a/macros/yuriyapostol.github.io/s/AKfycbyIc0_nBJ4vbwotSX9KdhFbRNDPokY6ABcqnzdbvqW_oKBDsYdxDQbKvPSpqsjjFWo/exec?action=get", {
-      method: "GET",
-      /*body: JSON.stringify({
+      method: "POST",
+      body: JSON.stringify({
         "b": "1111111111",
       }),
       headers: {
         "Content-Type": "text/plain;charse=utf=8",//"application/json",//application/x-www-form-urlencoded
       },
-      mode: "no-cors",*/
+      //mode: "no-cors",
       cache: "no-cache",
       redirect: "follow", 
     })
